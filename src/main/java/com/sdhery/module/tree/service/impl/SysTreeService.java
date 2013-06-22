@@ -7,6 +7,8 @@ import com.sdhery.module.tree.dao.ISysTreeDao;
 import com.sdhery.module.tree.domain.SysTree;
 import com.sdhery.module.tree.service.ISysTreeService;
 
+import java.util.List;
+
 /**
 * @Title:实现业务操作类
 * @Description: 系统树
@@ -22,5 +24,9 @@ public class SysTreeService extends BaseService<SysTree, Integer> implements ISy
 
     protected EntityDao<SysTree, Integer> getEntityDao() {
         return sysTreeDao;
+    }
+
+    public List<SysTree> getSysTreeListByParentId(int parentId) {
+        return sysTreeDao.getSysTreeListByParentId(parentId);
     }
 }

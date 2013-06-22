@@ -24,4 +24,8 @@
     </update>
 
     <delete id="deleteById" parameterType="java.lang.Integer">DELETE FROM sys_tree WHERE SYS_TREE_ID = #{id}</delete>
+
+    <select id="getSysTreeListByParentId" resultMap="BaseResultMap" resultType="java.lang.Integer">
+        SELECT <include refid="Base_Column_List" /> FROM sys_tree where PARENT_ID = #{parentId}
+    </select>
 </mapper>
