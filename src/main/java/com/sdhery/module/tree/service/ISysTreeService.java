@@ -3,6 +3,7 @@ package com.sdhery.module.tree.service;
 
 import com.sdhery.module.core.service.IBaseService;
 import com.sdhery.module.tree.domain.SysTree;
+import com.sdhery.module.tree.vo.Node;
 
 import java.util.List;
 
@@ -19,4 +20,6 @@ public interface ISysTreeService extends IBaseService<SysTree, Integer> {
      * @return
      */
     List<SysTree> getSysTreeListByParentId(int parentId);
+
+    List<Node<?>> getNodeListByParentId(int parentId);
 }
