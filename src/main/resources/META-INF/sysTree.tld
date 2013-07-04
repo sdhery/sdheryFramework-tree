@@ -12,4 +12,10 @@
         <function-class> com.sdhery.module.tree.function.SysTreeFunction</function-class>
         <function-signature>com.sdhery.module.tree.domain.SysTree getSysTreeBySysTreeId(int)</function-signature>
     </function>
+
+    <function>
+        <name>getSysTreeListByParentId</name>
+        <function-class> com.sdhery.module.tree.function.SysTreeFunction</function-class>
+        <function-signature>java.util.List getSysTreeListByParentId(int)</function-signature>
+    </function>
 </taglib>

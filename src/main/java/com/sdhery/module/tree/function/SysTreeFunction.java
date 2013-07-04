@@ -3,6 +3,8 @@ package com.sdhery.module.tree.function;
 import com.sdhery.module.helper.ServiceManager;
 import com.sdhery.module.tree.domain.SysTree;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: sdhery
@@ -13,5 +15,9 @@ import com.sdhery.module.tree.domain.SysTree;
 public class SysTreeFunction {
     public static SysTree getSysTreeBySysTreeId(int sysTreeId){
         return ServiceManager.sysTreeService.getById(sysTreeId);
+    }
+
+    public static List<SysTree> getSysTreeListByParentId(int parentId){
+        return ServiceManager.sysTreeService.getSysTreeListByParentId(parentId);
     }
 }
