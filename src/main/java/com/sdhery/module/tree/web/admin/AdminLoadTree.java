@@ -19,7 +19,7 @@ import java.util.List;
 public class AdminLoadTree {
     @RequestMapping(value = "/admin/loadMainLeftTree")
     @ResponseBody
-    List loadMainLeftTree(Integer parentId) {
+    Object loadMainLeftTree(Integer parentId) {
         return ServiceManager.sysTreeService.getNodeListByParentId(parentId);
     }
 }

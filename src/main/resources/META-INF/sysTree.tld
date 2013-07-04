@@ -8,7 +8,7 @@
     <uri>http://sysTree-tags</uri>
 
     <function>
-        <name>getAdminSysUser</name>
+        <name>getSysTreeBySysTreeId</name>
         <function-class> com.sdhery.module.tree.function.SysTreeFunction</function-class>
         <function-signature>com.sdhery.module.tree.domain.SysTree getSysTreeBySysTreeId(int)</function-signature>
     </function>
