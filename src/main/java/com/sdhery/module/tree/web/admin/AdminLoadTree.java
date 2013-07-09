@@ -1,5 +1,6 @@
 package com.sdhery.module.tree.web.admin;
 
+import com.sdhery.module.core.web.BaseController;
 import com.sdhery.module.helper.ServiceManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -16,7 +17,7 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 @Controller
-public class AdminLoadTree {
+public class AdminLoadTree extends BaseController {
     @RequestMapping(value = "/admin/loadMainLeftTree")
     @ResponseBody
     Object loadMainLeftTree(Integer parentId) {
