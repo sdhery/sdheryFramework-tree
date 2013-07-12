@@ -12,5 +12,8 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
     ">
-    <bean id="sysTreeService" class="com.sdhery.module.tree.service.impl.SysTreeService" p:sysTreeDao-ref="sysTreeDao"/>
+    <bean id="sysTreeService" class="com.sdhery.module.tree.service.impl.SysTreeService">
+        <property name="sysTreeDao" ref="sysTreeDao"/>
+        <property name="idGenerator" ref="mysqlIDGenerator"/>
+    </bean>
 </beans>
